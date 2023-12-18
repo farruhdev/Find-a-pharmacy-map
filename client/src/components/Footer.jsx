@@ -7,9 +7,9 @@ const Footer = () => {
             <span>
                 <img src={Logo} alt="logo" />
                 <br/>
-                Made with 🤍 by
+                웹서버프로그램
                 <br/>
-                <b>@santiagobedoa</b>
+                <b>© 2023 </b>
             </span>
         </footer>
     );

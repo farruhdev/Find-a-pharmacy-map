@@ -22,34 +22,26 @@ const Navbar = () => {
         </div>
         <div className="links">
           <Link className="link" to="/?cat=art">
-            <h6>ART</h6>
+            <h6>의료 상담</h6>
           </Link>
           <Link className="link" to="/?cat=science">
-            <h6>SCIENCE</h6>
+            <h6>약 주천</h6>
           </Link>
-          <Link className="link" to="/?cat=technology">
-            <h6>TECHNOLOGY</h6>
-          </Link>
-          <Link className="link" to="/?cat=cinema">
-            <h6>CINEMA</h6>
-          </Link>
-          <Link className="link" to="/?cat=design">
-            <h6>DESIGN</h6>
-          </Link>
-          <Link className="link" to="/?cat=food">
-            <h6>FOOD</h6>
+          
+          <Link className="link" to="http://localhost/">
+            <h6>주변 약국</h6>
           </Link>
           <span>{currentUser?.username}</span>
           {currentUser ? (
-            <span onClick={logoutNavbar}>Logout</span>
+            <span onClick={logoutNavbar}> 로그 아웃 </span>
           ) : (
             <Link className="link" to="/login">
-              Login
+              로그인
             </Link>
           )}
           <span className="write">
             <Link className="link" to="/write">
-              Write
+              글 쓰기
             </Link>
           </span>
         </div>
